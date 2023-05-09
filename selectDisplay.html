@@ -1,0 +1,48 @@
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <script src="selectDisplayJS.js"></script>
+    <title>Select</title>
+  </head>
+  <body>
+    <header>
+      <h1>Select and Display Molecule</h1>
+      <nav>
+        <a href="index.html"><button class="headerButton">Home</button></a>
+        <a href="addRemove.html"><button class="headerButton">Add/Remove</button></a>
+        <a href="uploadFile.html"><button class="headerButton">Upload</button></a>
+        <a href="selectDisplay.html"><button class="headerButton">Select</button></a>
+      </nav>
+    </header>
+    <div class="selectDisplay">
+        <form id="selectAndDisplay">
+          <h2>Select and Display</h2>
+          <label for="chooseMol">Molecule:</label>
+          <select id="chooseMol"></select>
+
+          <button type="submit">Display</button>
+          <label id="picture">Picture Below:</label>
+        </form>
+    </div>
+
+    <div class="showImage"></div>
+
+    <div class = "moleculeMod">
+      <form id="modifyMol">
+        <label for="xyz" id="axisLabel">Axis:</label>
+
+          <select id="xyz">
+            <option value = "x">X</option>
+            <option value = "y">Y</option>
+            <option value = "z">Z</option>
+          </select>
+
+          <label for="degreeNum" id="degreeBox">Degree:</label>
+	        <input type="number" id="degreeNum" name="degreeNum" min="0" max="360" value="0" required>
+          <button type="submit">Rotate Molecule</button>
+      </form>
+    </div>
+
+  </body>
+</html>

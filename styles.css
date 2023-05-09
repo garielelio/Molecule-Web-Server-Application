@@ -1,0 +1,133 @@
+.addElement {
+  margin-bottom: 20px;
+}
+
+.addElement form,
+.removeElement form,
+.uploadFile form,
+.selectDisplay form,
+.moleculeMod form{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.addElement label,
+.removeElement label,
+.moleculeMod label{
+  font-weight: bold;
+  font-family: Sans-serif;
+}
+
+.addElement input[type="text"],
+.addElement input[type="number"],
+.removeElement input[type="text"],
+.uploadFile input[type="text"]{
+  padding: 5px;
+  border-radius: 3px;
+  border: 1px solid ;
+}
+
+.addElement input[type="color"] {
+  width: 30px;
+  height: 30px;
+}
+
+.addElement button[type="submit"],
+.removeElement button[type="submit"],
+.uploadFile button[type="submit"],
+.selectDisplay button[type="submit"],
+.moleculeMod button[type="submit"]{
+  padding: 10px;
+  border-radius: 3px;
+  border: none;
+  background-color: #FFA500;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+
+.addElement button[type="submit"]:hover,
+.removeElement button[type="submit"]:hover,
+.switchMode button[type="submit"]:hover,
+.uploadFile button[type="submit"]:hover,
+.selectDisplay button[type="submit"]:hover,
+.moleculeMod button[type="submit"]:hover{
+  opacity: 0.8;
+}
+
+.headerButton {
+  margin-top: 10px;
+  display: inline-block;
+  padding: 10px;
+  background-color: #cc5500;
+  color: white;
+  text-align: center;
+  font-size: 14px;
+  border: none;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+
+.headerButton:hover{
+  opacity: 0.8;
+  color: black;
+  
+}
+
+header{
+  background-color:#cc5500;
+  height: 85px;
+}
+
+h1{
+  margin: 0;
+  padding-left: 10px;
+  color: #fff;
+  font-family: Sans-serif;
+}
+
+h2{
+  font-family: Sans-serif;
+  margin-bottom: 8px;
+}
+
+.switchMode button[type="submit"]{
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 3px;
+  border: none;
+  background-color: #3B8132;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+
+.uploadFile label{
+  font-weight: bold;
+  font-family: Sans-serif;
+  margin-top: 10px;
+}
+
+.selectDisplay label{
+  font-weight: bold;
+  font-family: Sans-serif;
+}
+
+.uploadFile input[type="file"]{
+  transform: scale(1.2);
+  margin-left: 25px;
+}
+
+.selectDisplay p{
+  margin-bottom: 5px;
+  margin-top: 3px;
+  font-weight: bold;
+  font-family: Sans-serif;
+
+}
